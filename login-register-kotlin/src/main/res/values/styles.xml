@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    x<style name="TextLabel" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+    <!-- Hint color and label color in FALSE state -->
+    <item name="android:textColorHint">@color/warm_grey</item>
+    <item name="android:textSize">16sp</item>
+    <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+    <item name="colorAccent">@color/warm_grey</item>
+    <item name="colorControlNormal">@color/warm_grey</item>
+    <item name="colorControlActivated">@color/colorPrimary</item>
+    <item name="colorControlHighlight">@color/colorPrimary</item>
+</style>
+</resources>
