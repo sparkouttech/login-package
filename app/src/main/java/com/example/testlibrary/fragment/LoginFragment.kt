@@ -1,16 +1,16 @@
-package com.sparkout.login_register_kotlin.fragment
+package com.example.testlibrary.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.sparkout.login_register_kotlin.R
-import com.sparkout.login_register_kotlin.callback.LoginDataCallback
-import com.sparkout.login_register_kotlin.common.Utils.Companion.preventDoubleClick
-import com.sparkout.login_register_kotlin.common.Utils.Companion.showToast
-import com.sparkout.login_register_kotlin.databinding.FragmentLoginBinding
-import com.sparkout.login_register_kotlin.model.LoginDataModel
+import com.example.testlibrary.R
+import com.example.testlibrary.callback.LoginDataCallback
+import com.example.testlibrary.common.Utils.Companion.preventDoubleClick
+import com.example.testlibrary.common.Utils.Companion.showToast
+import com.example.testlibrary.databinding.FragmentLoginBinding
+import com.example.testlibrary.model.LoginDataModel
 
 class LoginFragment : Fragment(), View.OnClickListener {
     var mFragmentLoginBinding: FragmentLoginBinding? = null

@@ -1,6 +1,6 @@
-package com.sparkout.login_register_kotlin.callback
+package com.example.testlibrary.callback
 
-import com.sparkout.login_register_kotlin.model.LoginDataModel
+import com.example.testlibrary.model.LoginDataModel
 import java.io.Serializable
 
 interface LoginDataCallback:Serializable {

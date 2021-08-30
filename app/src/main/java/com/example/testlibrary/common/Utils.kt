@@ -1,4 +1,4 @@
-package com.sparkout.login_register_kotlin.common
+package com.example.testlibrary.common
 
 import android.content.Context
 import android.view.View

@@ -1,4 +1,4 @@
-package com.sparkout.login_register_kotlin.model
+package com.example.testlibrary.model
 
 class LoginDataModel {
     var username:String=""
