@@ -64,4 +64,8 @@ class LoginFragment : Fragment(), View.OnClickListener {
             }
         }
     }
+
+    public fun setImageResource(image: Int) {
+        mFragmentLoginBinding?.ivLogo?.setImageResource(image)
+    }
 }
