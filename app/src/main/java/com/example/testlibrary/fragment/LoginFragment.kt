@@ -21,7 +21,7 @@ class LoginFragment : Fragment(), View.OnClickListener {
         savedInstanceState: Bundle?
     ): View {
         mFragmentLoginBinding = FragmentLoginBinding.inflate(inflater)
-        mLoginDataCallback = activity as LoginDataCallback
+        mLoginDataCallback = requireActivity() as LoginDataCallback
 
         mFragmentLoginBinding?.btnLogin?.setOnClickListener(this)
         return mFragmentLoginBinding?.root!!
