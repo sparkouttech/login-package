@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.example.testlibrary.R
 import com.example.testlibrary.callback.LoginDataCallback
@@ -24,6 +25,8 @@ class LoginFragment : Fragment(), View.OnClickListener {
         mLoginDataCallback = requireActivity() as LoginDataCallback
 
         mFragmentLoginBinding?.btnLogin?.setOnClickListener(this)
+        mFragmentLoginBinding?.tvForgotPassword?.setOnClickListener(this)
+        mFragmentLoginBinding?.tvSignUp?.setOnClickListener(this)
         return mFragmentLoginBinding?.root!!
     }
 
@@ -62,10 +65,25 @@ class LoginFragment : Fragment(), View.OnClickListener {
             R.id.btn_login -> {
                 login()
             }
+            R.id.tv_forgot_password -> {
+                mLoginDataCallback?.let {
+                    mLoginDataCallback?.clickForgotPassword()
+                }
+            }
+            R.id.tv_sign_up -> {
+                mLoginDataCallback?.let {
+                    mLoginDataCallback?.clickSignup()
+                }
+            }
         }
     }
 
     public fun setImageResource(image: Int) {
         mFragmentLoginBinding?.ivLogo?.setImageResource(image)
+    }
+
+    public fun setButtonBackground(background: Int) {
+        mFragmentLoginBinding?.btnLogin?.background =
+            ContextCompat.getDrawable(requireContext(), background)
     }
 }
